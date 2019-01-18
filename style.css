@@ -1,0 +1,60 @@
+h1
+{
+    text-align: center;
+	font-family: "Hot Secretary";
+    
+}
+h2,a
+{
+    font-family: fantasy;
+    font-style: italic;
+    color:hotpink;
+    font-size:140%;
+}
+
+#menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#page
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+section
+{
+    border: 10px black ridge;
+    margin:auto;
+    width: 90%;
+    min-width: 750px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.element
+{
+    width: 50%;
+    color:palevioletred;
+    font-family: fantasy;
+    
+}
+.element:nth-child(2)
+{
+    text-align:center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
