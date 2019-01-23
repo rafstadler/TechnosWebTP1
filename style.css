@@ -1,15 +1,15 @@
 h1
 {
     text-align: center;
-	font-family: "Hot Secretary";
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
     
 }
 h2,a
 {
-    font-family: fantasy;
-    font-style: italic;
-    color:hotpink;
-    font-size:140%;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+  text-decoration:none;
+    font-size:200%;
+	vertical-align:middle;
 }
 
 #menu
@@ -31,11 +31,38 @@ h2,a
 section
 {
     border: 10px black ridge;
-    margin:auto;
-    width: 90%;
-    min-width: 750px;
+	min-height: 100px;
+	min-width: 500px;
     padding: 20px;
-    margin-bottom: 30px;
+}
+
+video{
+	
+	padding : 50px;
+	width: 400px
+	
+}
+
+p{
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+}
+
+.gauche{
+	margin-bottom: 100px;
+	width: 51%;
+}
+
+.droite{
+	margin-top: 100px;
+	width: 51%;
+	float : right;
+	
+}
+
+.centre{
+	margin: auto;
+	margin-top: 200px;
+	width: 70%;
 }
 
 .element
@@ -50,6 +77,34 @@ section
     text-align:center;
 }
 
+img.user:hover {
+  cursor: pointer;
+  animation: bounceOut 0.6s linear;
+}
+
+@keyframes bounceOut {
+  0% {
+   	opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+	 transform: scale(1.02);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+   
+    opacity: 1;
+  }
+}
+
 footer
 {
     display: flex;
@@ -57,4 +112,43 @@ footer
     margin-bottom: 30px;
     margin-top: 50px;
     margin-right: 10px;
+}
+
+#audioplayer{
+	width: 480px;
+	height: 60px;
+	margin: 50px auto 50px auto;
+  border: solid;
+}
+
+#pButton{
+    height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+
+#timeline{
+	width: 400px;
+	height: 20px;
+	margin-top: 20px;
+	float: left;
+	border-radius: 15px;
+	background: rgba(0,0,0,.3);
+  
+}
+#playhead{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin-top: 1px;
+	background: rgba(0, 0, 0,1);
+
 }
