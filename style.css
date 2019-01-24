@@ -4,12 +4,29 @@ h1
 	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
     
 }
-h2,a
+h2
 {
+	writing-mode: vertical-rl;
+text-orientation: mixed;
     font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
   text-decoration:none;
-    font-size:200%;
+    font-size:120%;
 	vertical-align:middle;
+	margin-top : 10px;
+	
+}
+
+a{
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+  text-decoration:none;
+    font-size:120%;
+	vertical-align:middle;
+	margin-top : 10px;
+}
+
+h2.right{
+	margin-top : 50px;
+	margin-left: 80px;
 }
 
 #menu
@@ -43,6 +60,14 @@ video{
 	
 }
 
+ul.right{
+	margin : 10px 0px 50px 100px ;
+}
+
+ul.left{
+	margin : 10px 40px 50px 20px ;
+}
+
 p{
 	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
@@ -50,6 +75,7 @@ p{
 .gauche{
 	margin-bottom: 100px;
 	width: 51%;
+	
 }
 
 .droite{
@@ -59,7 +85,7 @@ p{
 	
 }
 
-.centre{
+.🥰{
 	margin: auto;
 	margin-top: 200px;
 	width: 70%;
@@ -117,8 +143,9 @@ footer
 #audioplayer{
 	width: 480px;
 	height: 60px;
-	margin: 50px auto 50px auto;
+	margin: 60px 00px 60px 10px;
   border: solid;
+	float : right;
 }
 
 #pButton{
@@ -132,8 +159,8 @@ footer
     outline:none;
 }
 
-.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
-.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+.play{background: url("beber.png") ;}
+.pause{background: url("cimon.png") ;}
 
 #timeline{
 	width: 400px;
@@ -145,10 +172,94 @@ footer
   
 }
 #playhead{
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	margin-top: 1px;
-	background: rgba(0, 0, 0,1);
+	width: 30px;
+	height: 30px;
+	background: url("raf.png");
 
+}
+
+
+
+
+
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: black;
+  
+  border: solid 10px black;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 10px black;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 50px;
+	
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: black;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 10px black;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
 }
